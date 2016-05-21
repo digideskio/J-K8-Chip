@@ -3,15 +3,15 @@ emulator of J-K8 (CPU/MCU)
 ### Specification:
 J-K8 CPU (HARVARD ARCHITECTURE):
 ## Memory:
-*512 bytes program memory (FLASH)
-*256 bytes  of RAM
+* 512 bytes program memory (FLASH)
+* 256 bytes  of RAM/VRAM shared 
 
 **Memory Map**
 
  Special Registers  | General Propuse Registers| Video Buffer Registers
 -------|---------|---------
-0x00 to 0x02|    0x3 to 0x7D   | 0x7F to 0xFF
- (3 bytes)  |    (122 bytes)   | ( 128 bytes)
+0x00 to 0x07|    0x8 to 0x7D   | 0x7F to 0xFF
+ (7 bytes)  |    (118 bytes)   | ( 128 bytes)
  
 ## Special registers:
 InProcess...
@@ -40,8 +40,10 @@ InProcess...
 
 
 
-## CPU:
-**4 mhz (0.00025 mili seconds);(each 4 pulses[ Frec/4= pulse ] increase PC reg)**
+## CPU :
+**4 mhz (0.00025 mili seconds);(each 4 pulses[ Frec/4= pulse ] increase PC reg)** </br>
+*P1 = fetch instruction; P2 = decode instruction ; P3 = execute instruction </br>*
+**CPU registers**
 * Working register               W  (acumulator)
 * Program Counter register       PC
 * Stack Pointer register         SP
@@ -53,9 +55,9 @@ InProcess...
 * x - A 4-bit value, the lower 4 bits of the high byte of the instruction
 * y - A 4-bit value, the upper 4 bits of the low byte of the instruction
 * kk or byte - An 8-bit value, the lowest 8 bits of the instruction
-# Operation codes
+# Op codes.
 
-hex code|binary code|Description|
----------|---------|---------|
+ hex     | bin     | Name    |Description
+---------|---------|---------|---------|
 
 
