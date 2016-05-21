@@ -1,4 +1,4 @@
-#### J-K8-Chip
+#### J-K8 Chip
 emulator of J-K8 (CPU/MCU) 
 ### Specification:
 J-K8 CPU (HARVARD ARCHITECTURE):
@@ -8,13 +8,19 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
 **Memory Map**
 
- Special Regiters  | General Propuse Registers| Video Buffer Registers
+ Special Registers  | General Propuse Registers| Video Buffer Registers
 -------|---------|---------
 0x00 to 0x02|    0x3 to 0x7D   | 0x7F to 0xFF
- (3 bytes)       (122 bytes)     ( 128 bytes)
+ (3 bytes)  |    (122 bytes)   | ( 128 bytes)
  
 ## Special registers:
-#InProcess...
+InProcess...
+
+##Output
+*Video*
+* 64 x 64 screen
+* 8 bit color or *ASCII* character(in console mode)
+* 
 
 ## Input:
 **8 key input**
