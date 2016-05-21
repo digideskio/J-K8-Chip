@@ -19,16 +19,16 @@ SPECIAL REGISTER BLOCK | General Propuse Block | Video Memory Block
 8 key input
 Personal Key Configuration
 
- KEYsssssssssssssssss   | Hex code
--------|---------
- UP    |   0X00  
- DOWN  |   0X01  
- LEFT  |   0X02  
- RIGHT |   0X03  
- A     |   0X04  
- B     |   0X05  
- C     |   0X06  
- D     |   0X07  
+ KEYss | Hex code|lol
+-------|---------|---------
+ UP    |   0X00  |
+ DOWN  |   0X01  |
+ LEFT  |   0X02  |
+ RIGHT |   0X03  |
+ A     |   0X04  |
+ B     |   0X05  |
+ C     |   0X06  |
+ D     |   0X07  |
 
 
 
