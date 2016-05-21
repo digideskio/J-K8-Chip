@@ -42,7 +42,7 @@ InProcess...
 
 ## CPU:
 * 4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
- #CPU registers:
+ # CPU registers:
 * Working register               W  (acumulator)
 * Program Counter register       PC
 * Stack Pointer register         SP
