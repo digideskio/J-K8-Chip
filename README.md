@@ -19,7 +19,7 @@ SPECIAL REGISTER BLOCK | General Propuse Block | Video Memory Block
 8 key input
 Personal Key Configuration
 
- KEY   | Hex code
+ KEYsssssssssssssssss   | Hex code
 -------|---------
  UP    |   0X00  
  DOWN  |   0X01  
