@@ -8,7 +8,6 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
 
           **RAM**
-----------------------------
 First Header | Second Header
 ------------ | -------------
 
