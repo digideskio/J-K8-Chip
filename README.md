@@ -7,8 +7,8 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 256 bytes  of RAM
 
 ----------------------------
-             RAM
-----------------------------
+            RAM
+-------------|--------------
 First Header | Second Header
 ------------ | -------------
 
