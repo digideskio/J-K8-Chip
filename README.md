@@ -6,9 +6,9 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 512 bytes program memory (FLASH)
 256 bytes  of RAM
 
+
+          **RAM**
 ----------------------------
-            RAM
--------------|--------------
 First Header | Second Header
 ------------ | -------------
 
