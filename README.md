@@ -33,14 +33,14 @@ Personal Key Configuration
 
 ## CPU:
 4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
-*Working register               W
-*Program Counter register       PC
-*Stack Pointer register         SP
+* Working register               W
+* Program Counter register       PC
+* Stack Pointer register         SP
 
 ## OP CODES :
 **Info:**
-nnn or addr - A 12-bit value, the lowest 12 bits of the instruction
-n or nibble - A 4-bit value, the lowest 4 bits of the instruction
-x - A 4-bit value, the lower 4 bits of the high byte of the instruction
-y - A 4-bit value, the upper 4 bits of the low byte of the instruction
-kk or byte - An 8-bit value, the lowest 8 bits of the instruction
+* nnn or addr - A 12-bit value, the lowest 12 bits of the instruction
+* n or nibble - A 4-bit value, the lowest 4 bits of the instruction
+* x - A 4-bit value, the lower 4 bits of the high byte of the instruction
+* y - A 4-bit value, the upper 4 bits of the low byte of the instruction
+* kk or byte - An 8-bit value, the lowest 8 bits of the instruction
