@@ -8,6 +8,8 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
 **Memory Map**
 
+ SPECIAL REGISTERS   | General Propuse Registers| Video Buffer Registers
+-------|---------|---------
 
 
 
@@ -15,19 +17,20 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 #InProcess...
 
 ## Input:
-8 key input
+**8 key input**
 Personal Key Configuration
 
- KEY   | Hex code
--------|---------
- UP    |   0X00  
- DOWN  |   0X01  
- LEFT  |   0X02  
- RIGHT |   0X03  
- A     |   0X04  
- B     |   0X05  
- C     |   0X06  
- D     |   0X07  
+ KEY   | Hex code|   bit map
+-------|---------|---------
+ NULL  |   0X00  |   00000000
+ UP    |   0X01  |   00000001
+ DOWN  |   0X02  |   00000010
+ LEFT  |   0X04  |   00000100
+ RIGHT |   0X08  |   00001000
+ A     |   0X10  |   00010000
+ B     |   0X20  |   00100000
+ C     |   0X40  |   01000000
+ D     |   0X80  |   10000000
 
 
 
