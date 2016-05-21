@@ -3,8 +3,8 @@ emulator of J-K8 (CPU/MCU)
 ### Specification:
 J-K8 CPU (HARVARD ARCHITECTURE):
 ## Memory:
-512 bytes program memory (FLASH)
-256 bytes  of RAM
+*512 bytes program memory (FLASH)
+*256 bytes  of RAM
 
 **Memory Map**
 
@@ -24,7 +24,7 @@ InProcess...
 
 ## Input:
 **8 key input**
-Personal Key Configuration
+*Personal Key Configuration
 
  KEY   | Hex code|   bit map
 -------|---------|---------
@@ -41,8 +41,9 @@ Personal Key Configuration
 
 
 ## CPU:
-4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
-* Working register               W
+* 4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
+* CPU REGISTERS*
+* Working register               W  (acumulator)
 * Program Counter register       PC
 * Stack Pointer register         SP
 
