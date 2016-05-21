@@ -8,7 +8,7 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
 **RAM**
 SPECIAL REGISTER BLOCK | General Propuse Block | Video Memory Block
------------------------| ----------------------|-------------------
+-----------------------|-----------------------|-------------------
 
 
 
