@@ -32,10 +32,10 @@ Personal Key Configuration
 
 
 ## CPU:
-4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)\n
-Working register               W\n
-Program Counter register       PC\n
-Stack Pointer register         SP\n
+4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
+*Working register               W
+*Program Counter register       PC
+*Stack Pointer register         SP
 
 ## OP CODES :
 **Info:**
