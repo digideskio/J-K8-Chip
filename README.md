@@ -46,11 +46,16 @@ InProcess...
 * Program Counter register       PC
 * Stack Pointer register         SP
 
-## OP CODES :
+## Instruction Set :
 
 **Info:**
 * n or nibble - A 4-bit value, the lowest 4 bits of the instruction
 * x - A 4-bit value, the lower 4 bits of the high byte of the instruction
 * y - A 4-bit value, the upper 4 bits of the low byte of the instruction
 * kk or byte - An 8-bit value, the lowest 8 bits of the instruction
+# Operation codes
+
+hex code|binary code|Description|
+---------|---------|---------|
+
 
