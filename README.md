@@ -10,9 +10,9 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
  Special Regiters  | General Propuse Registers| Video Buffer Registers
 -------|---------|---------
-0x00 to 0x03|
- (3 bytes)
-
+0x00 to 0x02|    0x3 to 0x7D   | 0x7F to 0XFF
+ (3 bytes)  |    (122 bytes)   | ( 128 bytes)
+ 
 ## Special registers:
 #InProcess...
 
