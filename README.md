@@ -20,11 +20,11 @@ InProcess...
 *Video*
 * 64 x 64 screen
 * 8 bit color or *ASCII* character(in console mode)
-* 
+
 
 ## Input:
 **8 key input**
-*Personal Key Configuration
+* Personal Key Configuration
 
  KEY   | Hex code|   bit map
 -------|---------|---------
@@ -42,7 +42,7 @@ InProcess...
 
 ## CPU:
 * 4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
-* CPU REGISTERS*
+* #CPU registers:
 * Working register               W  (acumulator)
 * Program Counter register       PC
 * Stack Pointer register         SP
