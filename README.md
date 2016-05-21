@@ -8,10 +8,10 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 
 **Memory Map**
 
- SPECIAL REGISTERS   | General Propuse Registers| Video Buffer Registers
+ Special Regiters  | General Propuse Registers| Video Buffer Registers
 -------|---------|---------
-
-
+0x00 to 0x03|
+ (3 bytes)
 
 ## Special registers:
 #InProcess...
