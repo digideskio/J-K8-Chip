@@ -6,9 +6,8 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 512 bytes program memory (FLASH)
 256 bytes  of RAM
 
-**RAM**
- Special register block   | General Propuse registers block| Video buffer block
--------|---------|---------
+**Memory Map**
+
 
 
 
@@ -33,13 +32,13 @@ Personal Key Configuration
 
 
 ## CPU:
-4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)
-Working register               W
-Program Counter register       PC
-Stack Pointer register         SP
+4 mhz (0.00025 mili seconds) (each 4 pulses[ Frec/4= pulse ] increase PC reg)\n
+Working register               W\n
+Program Counter register       PC\n
+Stack Pointer register         SP\n
 
 ## OP CODES :
-#Info:
+**Info:**
 nnn or addr - A 12-bit value, the lowest 12 bits of the instruction
 n or nibble - A 4-bit value, the lowest 4 bits of the instruction
 x - A 4-bit value, the lower 4 bits of the high byte of the instruction
