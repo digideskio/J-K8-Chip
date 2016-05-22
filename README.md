@@ -1,5 +1,5 @@
-#### J-K8 Chip
-emulator of J-K8 (CPU/MCU) 
+# J-K8 Chip
+emulator of J-K8 ( 8 bit CPU/MCU) 
 ### Specification:
 ## Memory:
 * 512 bytes program memory (FLASH)
@@ -58,13 +58,15 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 ## Instruction Set :
 
 **Info:**
-* n or nibble - A 4-bit value, the lowest 4 bits of the instruction
-* x - A 4-bit value, the lower 4 bits of the high byte of the instruction
-* y - A 4-bit value, the upper 4 bits of the low byte of the instruction
-* kk or byte - An 8-bit value, the lowest 8 bits of the instruction
+* kk  -> 8 bit constant
+* WRD -> 16 bit constant
+
 # Op codes.
 
  hex     | bin     | mnemonic    |Description
 ---------|---------|---------|---------|
-
+0X00     |00000000   |NOP              | no operation.
+0x01WRD  |00000001WRD|MOV Addr1,Addr2  | copy value from B to A.
+0x02     |00000010   |CLS              | clean 128 byte video buffer[clean the display]
+0x03kk   |00000011kk |JMP Addr          |The interpreter sets the program counter to kk.
 
