@@ -1,7 +1,6 @@
 #### J-K8 Chip
 emulator of J-K8 (CPU/MCU) 
 ### Specification:
-J-K8 CPU (HARVARD ARCHITECTURE):
 ## Memory:
 * 512 bytes program memory (FLASH)
 * 256 bytes  of RAM/VRAM shared 
@@ -16,10 +15,14 @@ J-K8 CPU (HARVARD ARCHITECTURE):
 ## Special registers:
 Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 -------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-0x00   | NOT IMPLEMETED  |*|*|*|*|*|*|*|*
-0x01| STATUS |x|x|x|x|x|x|x| Z
-
-
+0x00   | NOTHING|*|*|*|*|*|*|*|*
+0x01   | STATUS |x|x|x|x|x|x|x| Z
+0x02   | INPUT[1 pressed;0 clear] |Key 7|Key 6|Key 5|Key 4|Key 3|Key 2|Key 1|key 0
+0x03   | NONE | | | | | | | |  
+0x04   | NONE | | | | | | | |  
+0x05   | NONE | | | | | | | |  
+0x06   | NONE | | | | | | | |  
+0x07  | NONE | | | | | | | |  
 ##Output
 *Video*
 * 64 x 64 @60Hz screen
@@ -61,7 +64,7 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 * kk or byte - An 8-bit value, the lowest 8 bits of the instruction
 # Op codes.
 
- hex     | bin     | Name    |Description
+ hex     | bin     | mnemonic    |Description
 ---------|---------|---------|---------|
 
 
