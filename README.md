@@ -1,6 +1,6 @@
 # J-K8 Chip
 emulator of J-K8 ( 8 bit CPU/MCU) 
-### Specification:
+# Specification:
 ## Memory:
 * 512 bytes program memory (FLASH)
 * 256 bytes  of RAM/VRAM shared 
@@ -63,7 +63,7 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 * WRD ->  16 bit address (2 bytes or 2 addresses)
 * Addr -> 8 bit address
 
-# Op codes.
+###Op codes.
 
  hex     | bin     | mnemonic    |Description
 ---------|---------|---------|---------|
@@ -71,9 +71,9 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 0x01WRD  |00000001WRD|MOV Addr1,Addr2  | copy value from B to A.
 0x02     |00000010   |CLS              | clean 128 byte video buffer[clean the display]
 0x03kk   |00000011kk |JMP kk           | The interpreter sets the program counter to kk.
-0x04Addr;kk  |00000100kk |STF addr,kk           | Set addr kk value
+0x04Addr;kk  |00000100Addrkk |STF Addr,kk           | Set addr kk value
 0x05kk   |00000101kk |ADD kk           | add Vx register with kk value them Stored in W register
 0x06kk   |00000110kk |SUB kk           | substract Vx register with kk value them stored in W register
-
-
+0x07     |00000111 |RETURN             | Return from subrutine
+0x08Addr |00001000Addr| CALL Addr      | Call subroutine, 8-bit address 
 
