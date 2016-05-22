@@ -14,12 +14,16 @@ J-K8 CPU (HARVARD ARCHITECTURE):
  (7 bytes)  |    (118 bytes)   | ( 128 bytes)
  
 ## Special registers:
-InProcess...
+Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
+-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+0x00   | NOT IMPLEMETED  |*|*|*|*|*|*|*|*
+0x01| STATUS |x|x|x|x|x|x|x| Z
+
 
 ##Output
 *Video*
-* 64 x 64 screen
-* 8 bit color or *ASCII* character(in console mode)
+* 64 x 64 @60Hz screen
+* 8 bit **COLOR** or **ASCII** character (in console mode)
 
 
 ## Input:
