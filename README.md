@@ -71,8 +71,9 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 0x01WRD  |00000001WRD|MOV Addr1,Addr2  | copy value from B to A.
 0x02     |00000010   |CLS              | clean 128 byte video buffer[clean the display]
 0x03kk   |00000011kk |JMP kk           | The interpreter sets the program counter to kk.
-0x04kk   |00000100kk |STX kk           | Set Vx = kk value
+0x04Addr;kk  |00000100kk |STF addr,kk           | Set addr kk value
 0x05kk   |00000101kk |ADD kk           | add Vx register with kk value them Stored in W register
+0x06kk   |00000110kk |SUB kk           | substract Vx register with kk value them stored in W register
 
 
 
