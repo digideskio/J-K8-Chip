@@ -50,16 +50,18 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 ## CPU :
 **4 mhz (0.00025 mili seconds);(each 4 pulses[ Frec/4= pulse ] increase PC reg)** </br>
 *P1 = fetch instruction; P2 = decode instruction ; P3 = execute instruction </br>*
-**CPU registers**
+**8 bit CPU registers**
 * Working register               W  (acumulator)
+* Variable X                     Vx
 * Program Counter register       PC
 * Stack Pointer register         SP
 
 ## Instruction Set :
 
 **Info:**
-* kk  -> 8 bit constant
-* WRD -> 16 bit constant
+* kk  ->  8 bit constant
+* WRD ->  16 bit address (2 bytes or 2 addresses)
+* Addr -> 8 bit address
 
 # Op codes.
 
@@ -68,5 +70,9 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 0X00     |00000000   |NOP              | no operation.
 0x01WRD  |00000001WRD|MOV Addr1,Addr2  | copy value from B to A.
 0x02     |00000010   |CLS              | clean 128 byte video buffer[clean the display]
-0x03kk   |00000011kk |JMP Addr          |The interpreter sets the program counter to kk.
+0x03kk   |00000011kk |JMP kk           | The interpreter sets the program counter to kk.
+0x04kk   |00000100kk |STX kk           | Set Vx = kk value
+0x05kk   |00000101kk |ADD kk           | add Vx register with kk value them Stored in W register
+
+
 
