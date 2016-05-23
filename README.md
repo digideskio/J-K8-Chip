@@ -16,7 +16,7 @@ emulator of J-K8 ( 8 bit CPU/MCU)
 Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 -------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 0x00   | NOTHING|*|*|*|*|*|*|*|*
-0x01   | STATUS |x|x|x|x|x|x|x| Z
+0x01   | STATUS |x|x|x|x|x|Mode|Carry|Zero
 0x02   | INPUT[1 pressed;0 clear] |Key 7|Key 6|Key 5|Key 4|Key 3|Key 2|Key 1|key 0
 0x03   | NONE | | | | | | | |  
 0x04   | NONE | | | | | | | |  
@@ -63,7 +63,7 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 * WRD ->  16 bit address (2 bytes or 2 addresses)
 * Addr -> 8 bit address
 
-###Op codes.
+###Op codes(v1.0).
 
  hex     | bin     | mnemonic    |Description
 ---------|---------|---------|---------|
@@ -71,9 +71,14 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 0x01WRD  |00000001WRD|MOV Addr1,Addr2  | copy value from B to A.
 0x02     |00000010   |CLS              | clean 128 byte video buffer[clean the display]
 0x03kk   |00000011kk |JMP kk           | The interpreter sets the program counter to kk.
-0x04Addr;kk  |00000100Addrkk |STF Addr,kk           | Set addr kk value
+0x04Addr;kk  |00000100Addr;kk |STF Addr,kk           | Set addr kk value
 0x05kk   |00000101kk |ADD kk           | add Vx register with kk value them Stored in W register
 0x06kk   |00000110kk |SUB kk           | substract Vx register with kk value them stored in W register
 0x07     |00000111 |RETURN             | Return from subrutine
 0x08Addr |00001000Addr| CALL Addr      | Call subroutine, 8-bit address 
+0x09kk   |00001001kk| SE kk            |compares register Vx to kk,and if they are equal, increments the program counter by 2
+0x0Akk   |00001010  | SNE kk           |compares register Vx to kk, and if they are not equal, increments the program counter by 2.
+0x0Bkk;kk |00001011kk;kk| DRW kk,kk      | draw a pixel or character in position X(kk) & Y(kk). Vx contains pixel or character to draw
+0x0CAddr;Addr|00001100Addr;Addr| DRW Addr,Addr| draw a pixel or character in position X(kk) & Y(kk). --------------------------
+0x0Dkk | 00001101kk|DB kk | Defines a variable. A variable can either be a single number, character or a string.
 
