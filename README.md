@@ -51,17 +51,19 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 **4 mhz (0.00025 mili seconds);(each 4 pulses[ Frec/4= pulse ] increase PC reg)** </br>
 *P1 = fetch instruction; P2 = decode instruction ; P3 = execute instruction </br>*
 **8 bit CPU registers**
-* Working register               W  (acumulator)
-* Variable X                     Vx
-* Program Counter register       PC
-* Stack Pointer register         SP
+* Working register -> W (acumulator)
+* Program Counter register->PC
+
 
 ## Instruction Set :
 
 **Info:**
-* kk  ->  8 bit constant
-* WRD ->  16 bit address (2 bytes or 2 addresses)
-* Addr -> 8 bit address
+* kk   ->  8 bit Address 
+* [kk] -> 8 bit constant  
+###Example: </br>
+MOV 0X05,0X04 // copy value from 0x04 to 0x05 </br>
+**MOV 0X6,[52]  // copy the value '52 decimal/ or hex equivalent' to address 0x06** 
+
 
 ###Op codes(v1.0).
 
@@ -77,8 +79,8 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
  ||| 
  ||| 
  |||
-   |  |           |
- ||      | 
-|| | 
- | | | 
+ |||
+ ||| 
+ ||| 
+ ||| 
 
