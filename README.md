@@ -61,7 +61,7 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 * kk   ->  8 bit Address 
 * [kk] -> 8 bit constant  
 *Example:* </br>
-**MOV 0X05,0X04 // copy value from 0x04 to 0x05*** </br>
+**MOV 0X05,0X04 // copy value from 0x04 to 0x05** </br>
 **MOV 0X6,[52]  // copy the value '52 decimal/ or hex equivalent' to address 0x06** </br>
 
 
