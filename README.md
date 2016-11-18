@@ -54,12 +54,12 @@ Address| Description |Bit 7|Bit 6|Bit 5|Bit 4|Bit 3|Bit 3|Bit 2|Bit 0
 *Each execution block needs 0.01385 ms ( CPU_FREC_IN_SECONDS/3)* </br>
 *P1 = fetch instruction; P2 = decode instruction ; P3 = execute instruction </br>*
 ### CPU REGS:
-**Stack Pointer,stack frame and program counter**
-*16 addresses(16 bit) stack depth(allocated in the last position of the general propouse regs-0X7D)*</br>
+**Stack Pointer,stack frame and program counter**</br>
+*16 addresses(16 bit) stack depth (allocated in the last position of the general propouse regs-0X7D)*</br>
 *16(2 bytes) bit porgram counter lenght *</br>
 *16 bit program counter*</br>
 
-it might we have too large values for the addressing, but is a theorical model.
+it might we have too large values for the addressing, but is a theoretical model c:
 
 ## Instruction Set :
 *Compiler goes here lol*</br>
@@ -75,7 +75,7 @@ it might we have too large values for the addressing, but is a theorical model.
 
  hex     | bin     | mnemonic    |Description
 ---------|---------|---------|---------|
- ||| 
+ 0x00|00000000|NOP| No operation 
  ||| 
  ||| 
  ||| 
